@@ -1,0 +1,7 @@
+vigueur:
+  5: eco give %player_name% 15000
+  10:
+    - eco give %player_name% 30000
+    - give %player_name% diamond 64
+perception:
+  10: say %player_name% devient un mineur expert!

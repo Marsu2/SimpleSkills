@@ -1,0 +1,119 @@
+skills:
+
+  # Force : +0.5 de dégâts d’arme par niveau (jusqu’à +5 dégâts)
+  strength:
+    display: "Force"
+    material: "IRON_SWORD"
+    max-level: 10
+    base-cost: 2
+    cost-increment: 2
+    formula-cost: "2+(level-1)*2"
+    attribute: "generic.attack_damage"
+    formula-attribute: "level*0.5"
+    description:
+      - "Augmente les dégâts d'arme de %value% par coup"
+
+  # Vigueur : +1.0 de santé max par niveau (jusqu’à +10 PV)
+  vigor:
+    display: "Vigueur"
+    material: "APPLE"
+    max-level: 10
+    base-cost: 2
+    cost-increment: 2
+    formula-cost: "2+(level-1)*2"
+    attribute: "generic.max_health"
+    formula-attribute: "20 + level*1.0"
+    description:
+      - "Ajoute %value% points de vie maximum"
+
+  # Agilité : +0.005 de vitesse de déplacement par niveau (~+0.05 total)
+  agility:
+    display: "Agilité"
+    material: "FEATHER"
+    max-level: 5
+    base-cost: 3
+    cost-increment: 1
+    formula-cost: "3+(level-1)*1"
+    attribute: "generic.movement_speed"
+    formula-attribute: "level*0.005"
+    description:
+      - "Augmente la vitesse de déplacement de %value%"
+
+  # Endurance : +0.02 de résistance aux coups par niveau (~+0.2 total)
+  endurance:
+    display: "Endurance"
+    material: "SHIELD"
+    max-level: 10
+    base-cost: 3
+    cost-increment: 1
+    formula-cost: "3+(level-1)*1"
+    attribute: "generic.knockback_resistance"
+    formula-attribute: "level*0.02"
+    description:
+      - "Réduit les effets de recul de %value%"
+
+  # Perception : +0.01 de chance par niveau (~+0.1 total)
+  perception:
+    display: "Perception"
+    material: "ENDER_EYE"
+    max-level: 10
+    base-cost: 2
+    cost-increment: 2
+    formula-cost: "2+(level-1)*2"
+    attribute: "generic.luck"
+    formula-attribute: "level*0.01"
+    description:
+      - "Augmente la chance de %value%"
+
+  # Intelligence : +3% d’XP gagnée par niveau (jusqu’à +30%)
+  intelligence:
+    display: "Intelligence"
+    material: "BOOK"
+    max-level: 10
+    base-cost: 2
+    cost-increment: 2
+    formula-cost: "2+(level-1)*2"
+    attribute: "exp"
+    formula-attribute: "level*0.03"
+    description:
+      - "Augmente l'expérience reçue de %value%%"
+
+  # Richesse : +1.5% de gains d’argent par niveau (jusqu’à +15%)
+  wealth:
+    display: "Richesse"
+    material: "GOLD_INGOT"
+    max-level: 10
+    base-cost: 3
+    cost-increment: 2
+    formula-cost: "3+(level-1)*2"
+    attribute: "money"            # à utiliser via MoneyUtil dans ton shop
+    formula-attribute: "level*0.015"
+    description:
+      - "Augmente les gains d'argent de %value%%"
+
+
+  # Cuisine : pour un futur module cuisine
+  cooking:
+    display: "Cuisine"
+    material: "COOKED_BEEF"
+    max-level: 10
+    base-cost: 2
+    cost-increment: 1
+    formula-cost: "2+(level-1)*1"
+    attribute: ""
+    formula-attribute: ""
+    description:
+      - "Améliore l'efficacité des recettes (usage custom)"
+
+
+  minage:
+    display: "Miner"
+    material: "IRON_PICKAXE"
+    max-level: 10
+    base-cost: 2
+    cost-increment: 2
+    formula-cost: "1"
+    attribute: "MINING_EFFICIENCY"
+    formula-attribute: "0.1491 * level * level + 0.026 * level + 9.825"
+    description:
+      - "Augmente l'efficacité du minage de %value%%"

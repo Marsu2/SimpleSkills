@@ -1,0 +1,24 @@
+name: SimpleSkills
+main: org.simpleskills.SimpleSkillsPlugin
+version: 1.0
+api-version: 1.16
+softdepend:
+  - PlaceholderAPI
+  - DailyShop
+depend: [ItemsAdder]
+
+commands:
+  skills:
+    description: Open skills menu
+  giveSkills:
+    description: Give skill points
+  skillsadmin:
+    description: Admin commands for skills
+  sellall:
+    description: Sell all items with wealth boost
+    usage: /sellall
+  skillsreload:
+    description: Reload config
+permissions:
+  simpleskills.admin:
+    default: op
